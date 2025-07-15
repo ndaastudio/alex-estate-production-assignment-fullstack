@@ -9,6 +9,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import FadeContent from "@/components/ui/fade-content";
 
 function Transaction() {
   return (
@@ -26,14 +27,21 @@ function Transaction() {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="space-y-4">
-        <div className="flex gap-4">
-          <TransactionCard />
-          <TransactionCard />
+      <FadeContent
+        blur={true}
+        duration={1000}
+        easing="ease-out"
+        initialOpacity={0}
+      >
+        <div className="space-y-4">
+          <div className="flex gap-4">
+            <TransactionCard />
+            <TransactionCard />
+          </div>
+          <TransactionSummary />
+          <TransactionTable />
         </div>
-        <TransactionSummary />
-        <TransactionTable />
-      </div>
+      </FadeContent>
     </>
   );
 }
