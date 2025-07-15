@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageNotFound from "./pages/not-found";
 import Transaction from "./pages/transaction";
-import Layout from "./components/Layout";
+import Layout from "./components/layout";
 import OtherPage from "./pages/other-page";
 
 function App() {
