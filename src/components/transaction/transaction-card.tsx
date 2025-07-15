@@ -1,5 +1,5 @@
-import { Progress } from "@radix-ui/react-progress";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Progress } from "../ui/progress";
 import InfoRow from "./info-row";
 import {
   AlertTriangle,
